@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&display=swap");
+
+.font-title {
+  font-family: "Reem Kufi", "Cairo", sans-serif;
+}
+
+/* تحسينات بسيطة للكارد */
+.group {
+  transition: all 0.3s ease;
+}
+
+.group:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين الزر عند الهوفر */
+button:active {
+  transform: scale(0.98);
+}

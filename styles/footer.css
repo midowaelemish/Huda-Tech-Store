@@ -1,0 +1,35 @@
+/* فقط للخطوط والأنيميشن الأساسية - الباقي كله Tailwind */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&display=swap");
+
+.font-title {
+  font-family: "Reem Kufi", "Cairo", sans-serif;
+}
+
+/* أنيميشن بسيط للروابط */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-section {
+  animation: fadeInUp 0.5s ease-out backwards;
+}
+
+.footer-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.footer-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.footer-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.footer-section:nth-child(4) {
+  animation-delay: 0.4s;
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Reem+Kufi:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
+
+/* خطوط متنوعة للأقسام المختلفة */
+.font-title {
+  font-family: "Reem Kufi", "Cairo", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-description {
+  font-family: "Amiri", "Cairo", serif;
+  font-weight: 500;
+}
+
+.font-features-title {
+  font-family: "Cairo", sans-serif;
+  font-weight: 800;
+}
+
+.font-features-text {
+  font-family: "Lateef", "Cairo", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* تحسينات إضافية للشكل */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.group {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* تخصيص شريط التمرير */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
+
+/* تحسينات للـ RTL */
+[dir="rtl"] .space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* تأثيرات للنصوص */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* تأثير Hover للبطاقة */
+.group:hover .glow-effect {
+  animation: pulse 2s infinite;
+}
+
+/* تحسين التباعد العام */
+body {
+  line-height: 1.6;
+}
+
+/* للأجهزة المحمولة */
+@media (max-width: 768px) {
+  .font-features-text {
+    font-size: 1.1rem;
+  }
+
+  .font-description {
+    font-size: 1.2rem;
+  }
+}

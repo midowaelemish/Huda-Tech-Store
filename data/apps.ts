@@ -2,9 +2,11 @@ export const apps = {
   arbaon: {
     name: "الأربعون النووية",
     desc: "تطبيق للأربعون النووية",
-    link: "https://play.google.com/store/apps/details?id=com.alarbaon",
+    link: "https://github.com/midowaelemish/fourty-nawawi_hadiths/releases/download/V1.0/app-arm64-v8a-release.apk",
     image: "/images/icons/alarbaon.jpg",
     version: "1.0",
+    createdAt: "2026-04-30T00:00:00Z",
+    updatedAt: "2026-04-30T00:00:00Z",
     advantages: [
       "توفير الأحاديث النبوية الشريفة في تطبيق واحد",
       "سهولة الوصول إلى الأحاديث في أي وقت ومن أي مكان",
@@ -40,5 +42,7 @@ export const apps = {
     ],
     link: "https://play.google.com/store/apps/details?id=com.azkar",
     image: "/images/icons/azkar.jpg",
+    createdAt: "2026-04-30T00:00:00Z",
+    updatedAt: "2026-04-30T00:00:00Z",
   },
 };

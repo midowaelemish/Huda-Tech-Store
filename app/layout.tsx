@@ -3,6 +3,7 @@ import { Amiri, Cairo, Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,7 @@ const amiri = Amiri({
   variable: "--font-amiri",
 });
 const uthmanic = localFont({
-  src: "../public/fonts/Uthmanic.otf",
+  src: "./src/fonts/Uthmanic.otf",
   variable: "--font-uthmanic",
 });
 export const metadata: Metadata = {
@@ -40,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body className="flex flex-col min-h-screen">
+        <Header />
         {children}
         <Footer />
       </body>

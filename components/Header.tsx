@@ -22,7 +22,7 @@ export default function Header({ title }: { title?: string }) {
         </div>
 
         {/* العنوان الرئيسي */}
-        <h1 className="header-title">{title || "متجر التطبيقات"}</h1>
+        <h1 className="header-title">{title || "هدى تك"}</h1>
 
         {/* عناصر إضافية (اختيارية) */}
         <div className="header-actions">

@@ -28,7 +28,7 @@ export default function Footer() {
                   d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                 />
               </svg>
-              <span className="text-2xl font-black bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent font-title">
+              <span className="text-2xl font-black bg-linear-to-r from-white to-blue-300 bg-clip-text text-transparent font-title">
                 متجر التطبيقات
               </span>
             </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 <a
                   key={social.icon}
                   href="#"
-                  className="w-9 h-9 bg-white/5 rounded-xl flex items-center justify-center hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
+                  className="w-9 h-9 bg-white/5 rounded-xl flex items-center justify-center hover:bg-linear-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition-all duration-300 hover:-translate-y-1"
                   aria-label={social.label}
                 >
                   <svg
@@ -69,13 +69,13 @@ export default function Footer() {
 
           {/* قسم روابط سريعة */}
           <div className="footer-section space-y-4">
-            <h3 className="text-white font-bold text-lg relative inline-block after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-8 after:h-0.5 after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:rounded-full">
+            <h3 className="text-white font-bold text-lg relative inline-block after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-8 after:h-0.5 after:bg-linear-to-r after:from-blue-500 after:to-purple-500 after:rounded-full">
               روابط سريعة
             </h3>
             <ul className="space-y-3">
               {[
                 { name: "الرئيسية", href: "/" },
-                { name: "التطبيقات", href: "/apps" },
+                { name: "التطبيقات", href: "/apps-list" },
                 { name: "من نحن", href: "/about" },
                 { name: "اتصل بنا", href: "/contact" },
               ].map((item) => (
@@ -93,7 +93,7 @@ export default function Footer() {
 
           {/* قسم الدعم */}
           <div className="footer-section space-y-4">
-            <h3 className="text-white font-bold text-lg relative inline-block after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-8 after:h-0.5 after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:rounded-full">
+            <h3 className="text-white font-bold text-lg relative inline-block after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-8 after:h-0.5 after:bg-linear-to-r after:from-blue-500 after:to-purple-500 after:rounded-full">
               الدعم
             </h3>
             <ul className="space-y-3">
@@ -117,7 +117,7 @@ export default function Footer() {
 
           {/* قسم النشرة البريدية */}
           <div className="footer-section space-y-4">
-            <h3 className="text-white font-bold text-lg relative inline-block after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-8 after:h-0.5 after:bg-gradient-to-r after:from-blue-500 after:to-purple-500 after:rounded-full">
+            <h3 className="text-white font-bold text-lg relative inline-block after:content-[''] after:absolute after:-bottom-2 after:right-0 after:w-8 after:h-0.5 after:bg-linear-to-r after:from-blue-500 after:to-purple-500 after:rounded-full">
               اشترك معنا
             </h3>
             <p className="text-sm text-gray-400">
@@ -133,7 +133,7 @@ export default function Footer() {
               <button
                 title="."
                 type="submit"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl px-4 py-2 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
+                className="bg-linear-to-r from-blue-500 to-purple-500 rounded-xl px-4 py-2 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/30"
               >
                 <svg
                   className="w-5 h-5"
@@ -156,7 +156,7 @@ export default function Footer() {
         {/* القسم السفلي */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p className="text-gray-500">
-            © {currentYear} متجر التطبيقات. جميع الحقوق محفوظة
+            © {currentYear} هدى تك. جميع الحقوق محفوظة
           </p>
           <div className="flex items-center gap-4">
             <span className="text-gray-500">طرق الدفع الآمنة</span>
